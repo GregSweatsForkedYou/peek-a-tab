@@ -1,0 +1,10 @@
+{
+  "extension_name": {
+    "message": "Peek-a-tab, Tabs Manager for Google Chrome™",
+    "description": "The display name for the extension."
+  },
+  "extension_description": {
+    "message": "Search, preview, jump across, and close tabs quickly in your chrome browser.",
+    "description": "Description of what the extension does."
+  }
+}

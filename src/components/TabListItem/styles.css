@@ -1,0 +1,143 @@
+.tab {
+  position: relative;
+  border-radius: 3px;
+  height: 60px;
+  border: 2px solid transparent;
+  color: var(--color-grey-10);
+  box-sizing: border-box;
+  cursor: pointer;
+  vertical-align: middle;
+  overflow: hidden;
+  padding: 6px 7px;
+  background: var(--color-white);
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.tab:hover,
+.tab:focus-within {
+  background: var(--color-primary-0);
+  outline: none;
+  /* background: #eee; */
+  /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); */
+  /* color: #2e7fb9; */
+}
+
+.tab.active {
+  border-color: var(--color-primary-5);
+
+  /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); */
+  color: var(--color-primary-5);
+}
+
+.tab.discarded {
+  color: var(--color-grey-4);
+}
+
+.tab-icon-container {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  /* float: left; */
+  margin: 0 10px 0 0;
+  background: var(--color-grey-1);
+  border: 2px solid var(--color-grey-1);
+  border-radius: 8px;
+  padding: 4px;
+  box-sizing: border-box;
+  flex: 0 0 auto;
+}
+
+.tabAudioButton {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  padding: 3px;
+  margin: 0 5px;
+  background: transparent;
+  top: 12px;
+  left: 4px;
+}
+
+.tab.discarded .tab-icon-container {
+  border-color: var(--color-grey-4);
+  filter: grayscale(100%);
+  opacity: 0.6;
+  border-right-style: dashed;
+  border-bottom-style: dashed;
+}
+
+.tab-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.tab-texts {
+  overflow: hidden;
+  flex: 1;
+}
+
+.tab-title {
+  font-size: 14px;
+  margin: 2px 0;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tab-url {
+  font-size: 13px;
+  margin: 4px 0 2px 0px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--color-grey-4);
+  font-weight: 300;
+}
+
+.tab.active .tab-url {
+  color: var(--color-primary-4);
+}
+
+.tab.discarded .tab-url {
+  color: var(--color-grey-4);
+}
+
+.highlight {
+  background: #ffd64d;
+  color: #101010;
+  border-radius: 5px;
+  padding: 0 2px;
+  display: inline-block;
+}
+
+.tabButtonsContainer {
+  display: none;
+}
+
+.tabButton {
+  width: 24px;
+  height: 24px;
+  padding: 3px;
+  border-radius: 4px;
+  margin: 0 5px;
+}
+
+.tabButtonRefresh {
+  background: #ff9c00;
+  color: #fff;
+}
+
+.tabButtonClose {
+  background: red;
+  color: #fff;
+}
+
+.tab.active .tabButtonsContainer,
+.tab:hover .tabButtonsContainer,
+.tab:focus-within .tabButtonsContainer {
+  display: block;
+}

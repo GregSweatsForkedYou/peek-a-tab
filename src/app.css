@@ -1,0 +1,64 @@
+.app-container {
+}
+
+.app-header-container {
+  position: fixed;
+  position: -webkit-sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: var(--color-grey-2);
+  padding: 10px;
+  height: 30px;
+}
+
+.app-windows-list-container {
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 12px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.window-list-item-container {
+  overflow: hidden;
+}
+
+.window-list-item-heading {
+  color: var(--color-grey-5);
+  font-size: 13px;
+  font-weight: 300;
+  padding: 12px 8px 8px;
+  margin: 0;
+  border-top: 1px solid var(--color-grey-0);
+  border-bottom: 1px solid var(--color-grey-0);
+  background-color: var(--color-white);
+}
+
+.window-list-item-body {
+  position: relative;
+  min-height: 30px;
+}
+
+.window-list-item-no-tab-msg {
+  position: absolute;
+  top: 0;
+  color: var(--color-grey-2);
+  right: 0;
+  left: 0;
+  padding: 10px;
+  margin: 0;
+}
+
+.tabs-list {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: var(--color-white);
+  position: relative;
+}

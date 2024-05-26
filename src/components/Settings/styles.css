@@ -1,0 +1,85 @@
+.settings {
+  height: 28px;
+  position: relative;
+}
+
+.settings-button {
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
+  background-color: var(--color-grey-0);
+  color: var(--color-grey-7);
+  border-radius: 8px;
+  padding: 7px;
+  position: relative;
+  z-index: 2;
+}
+
+.settingsModalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.settingsModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(4px);
+}
+
+.settingsModal {
+  position: absolute;
+  background: var(--color-grey-0);
+  top: 45px;
+  right: 12px;
+  width: 200px;
+  padding: 0 12px;
+  border-radius: 8px;
+  border: 1px solid var(--color-grey-2);
+}
+
+.settingsHeadline {
+  font-size: 16px;
+  color: var(--color-grey-7);
+}
+
+.settingsBlock {
+}
+
+.mouseBehaviorOption {
+  margin-bottom: 12px;
+  background: var(--color-grey-0);
+  text-align: left;
+  border: 2px solid var(--color-grey-1);
+}
+
+.mouseBehaviorOption.selected {
+  border: 2px solid var(--color-primary-5);
+}
+
+.mouseBehaviorOptionName {
+  color: var(--color-grey-10);
+  font-weight: 500;
+  font-size: 14px;
+  margin: 5px 0 10px;
+}
+
+.mouseBehaviorOption.selected .mouseBehaviorOptionName {
+  color: var(--color-primary-5);
+}
+
+.mouseBehaviorOptionText {
+  font-size: 12px;
+  margin: 2px 0;
+  color: var(--color-grey-4);
+  font-weight: 400;
+}
+
+.mouseBehaviorOption.selected .mouseBehaviorOptionText {
+  color: var(--color-primary-4);
+}

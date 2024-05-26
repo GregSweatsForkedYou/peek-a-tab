@@ -1,0 +1,117 @@
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+
+  /* primary color */
+  --color-primary-0: #d9eeff;
+  --color-primary-1: #addbff;
+  --color-primary-2: #82c9ff;
+  --color-primary-3: #57b6ff;
+  --color-primary-4: #2ba3ff;
+  --color-primary-5: #0090ff;
+  --color-primary-6: #0078d4;
+  --color-primary-7: #005fa8;
+  --color-primary-8: #00477d;
+  --color-primary-9: #002e52;
+  --color-primary-10: #001626;
+
+  /* grey color */
+  --color-grey-0: #f3f4f6;
+  --color-grey-1: #dadfe4;
+  --color-grey-2: #c1cad2;
+  --color-grey-3: #a9b5c0;
+  --color-grey-4: #90a0ae;
+  --color-grey-5: #788b9d;
+  --color-grey-6: #627687;
+  --color-grey-7: #51606f;
+  --color-grey-8: #3f4b56;
+  --color-grey-9: #2d363d;
+  --color-grey-10: #1b2025;
+}
+
+html {
+  background: var(--color-white);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+a {
+  font-weight: 500;
+  color: var(--color-primary-5);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--color-primary-3);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--color-grey-0);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: var(--color-primary-3);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  background: var(--color-grey-0);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-white: #000;
+    --color-black: #fff;
+
+    /* primary color */
+    --color-primary-0: #001626;
+    --color-primary-1: #002e52;
+    --color-primary-2: #00477d;
+    --color-primary-3: #005fa8;
+    --color-primary-4: #0078d4;
+    --color-primary-5: #0090ff;
+    --color-primary-6: #2ba3ff;
+    --color-primary-7: #57b6ff;
+    --color-primary-8: #82c9ff;
+    --color-primary-9: #addbff;
+    --color-primary-10: #d9eeff;
+
+    /* grey color */
+    --color-grey-10: #f3f4f6;
+    --color-grey-9: #dadfe4;
+    --color-grey-8: #c1cad2;
+    --color-grey-7: #a9b5c0;
+    --color-grey-6: #90a0ae;
+    --color-grey-5: #788b9d;
+    --color-grey-4: #627687;
+    --color-grey-3: #51606f;
+    --color-grey-2: #3f4b56;
+    --color-grey-1: #2d363d;
+    --color-grey-0: #1b2025;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
