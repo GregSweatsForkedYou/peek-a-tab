@@ -20,7 +20,7 @@ import { MOUSE_BEHAVIOR } from "./constants.ts";
 // import { useOnWindowsFocusChange } from "./hooks/useOnWindowsFocusChange.ts";
 import { useSetWindowWidth } from "./hooks/useSetWindowWidth.ts";
 
-let closeWindowOnFocusChange = false;
+let closeWindowOnFocusChange = true;
 let platformOS = ""; // mac || win || linux || something else
 browser.runtime.getPlatformInfo().then((platformInfo) => {
   platformOS = platformInfo.os;

@@ -4,7 +4,7 @@
 
   "name": "__MSG_extension_name__",
   "description": "__MSG_extension_description__",
-  "version": "2.0.0",
+  "version": "2.0.1",
 
   "icons": {
     "16": "images/icon16.png",
@@ -18,10 +18,10 @@
 
   "action": {
     "default_icon": {
-      "16": "images/icon16.png",
-      "32": "images/icon32.png",
-      "64": "images/icon64.png",
-      "128": "images/icon128.png"
+      "16": "images/action_icon16.png",
+      "32": "images/action_icon32.png",
+      "64": "images/action_icon64.png",
+      "128": "images/action_icon128.png"
     }
   },
 
